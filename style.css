@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+#container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(44, 60, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quotes-box {
+    padding: 1rem;
+    height: 18rem;
+    width: 33rem;
+    background-color: white;
+}
+
+blockquote {
+    border: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: -30px;
+}
+
+blockquote h3 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(44, 64, 80);
+    transition: all 0.7s ease-in-out;
+}
+
+blockquote h3::before {
+    content: open-quote;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(43, 40, 40);
+    margin-right: 10px;
+
+}
+
+#author {
+    font-size: 1.1rem;
+    margin-top: 35px;
+    margin-right: 10px;
+    text-align: right;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#author::before {
+    content: "-";
+    display: inline;
+    margin-right: 9px;
+    font-size: 2rem;
+}
+
+.end {
+    margin: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social {
+    margin-left: 1rem;
+    display: flex;
+}
+
+#twitter {
+    margin-right: 2rem;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(44, 60, 80);
+}
+
+.fa-brands {
+    font-size: 1.2rem;
+    color: wheat;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 90%;
+    transform: scale(0.98);
+}
+
+.btn {
+    border-radius: 5px;
+
+}
+
+#tubular {
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(44, 60, 80);
+
+}
+
+.fa-twitter {
+    padding: 10px;
+}
+
+.fa-tumblr {
+    padding: 10px 15px;
+}
+
+#new-quote {
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(44, 60, 80);
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #quotes-box {
+        margin: 0 5rem;
+        border: 1px solid black;
+    }
+}
